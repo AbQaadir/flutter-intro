@@ -1,3 +1,4 @@
+import 'package:exampreparation/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,15 +15,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: SafeArea(
-          child: Scaffold(
-            appBar: AppBar(
-              title: const Text('Example Preparation'),
-            ),
-            body: const Center(
-              child: Text('Hello World!'),
-            ),
-          ),
-        ));
+        home: const HomePage());
   }
 }
