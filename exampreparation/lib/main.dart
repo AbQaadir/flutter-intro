@@ -9,8 +9,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Hello World',
-        textDirection: TextDirection.ltr, style: TextStyle(fontSize: 120));
+    return const SafeArea(
+        child: Text(
+      'Hello World!',
+      style: TextStyle(fontSize: 24),
+      textDirection: TextDirection.ltr,
+    ));
   }
 }
 
